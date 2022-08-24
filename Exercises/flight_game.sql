@@ -2,7 +2,7 @@ create database flight_game;
 use flight_game;
 
 create table airport(
-id int not null,
+id int,
 ident varchar(999) not null,
 type varchar(999),
 name varchar(999),
