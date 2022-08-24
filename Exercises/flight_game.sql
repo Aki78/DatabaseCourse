@@ -20,7 +20,6 @@ local_code varchar(999),
 home_link varchar(999),
 wikipedia_link varchar(999),
 keywords varchar(999),
-primary key ident
 );
 
 create table goal(
@@ -34,6 +33,15 @@ target_maxvalue float(53),
 target_text varchar(999),
 primary key (id)
 );
+
+create table game(
+id int no null,
+co2_consumed float(53),
+co2_budget float(53),
+location varchar(999)
+primary key (id),
+/*foreign key (location)*/
+)
 
 
 create table goal_reached(
@@ -51,9 +59,9 @@ name varchar(999),
 continent varchar(999),
 wikipedia_link varchar(999),
 keywords varchar(999)
-primary key (id)
+/*primary key (id)*/
 )
-========================================
+/*========================================
 create table duckburger(
 ID int not null auto_increment,
 first_name varchar(40),
@@ -83,4 +91,4 @@ insert into pet(name)
 values("Bolivar"), ("Pluto"), ("Ratface");
 
 insert into owns(pet_ID, duckburger_ID)
-values(1,1),(1,3),(2,5),(3,4);
+values(1,1),(1,3),(2,5),(3,4);*/
