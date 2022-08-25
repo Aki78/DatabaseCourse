@@ -2,8 +2,8 @@ create database flight_game;
 use flight_game;
 
 create table airport(
-id int,
-ident varchar(999) not null,
+idd int,
+ident varchar(999),
 type varchar(999),
 name varchar(999),
 latitude_deg float(53),
@@ -61,6 +61,21 @@ continent varchar(999),
 wikipedia_link varchar(999),
 keywords varchar(999)
 )
+
+-- ========================================
+
+load data infile "/home/aki/DatabaseCourse/Exercises/airports.csv" into table airport;
+
+
+
+
+
+
+
+
+
+
+
 -- ========================================
 -- create table duckburger(
 -- ID int not null auto_increment,
