@@ -71,6 +71,7 @@ load data local infile './airports.csv'
 into table airport
 character set utf8
 fields terminated by ','
+optionally enclosed by '"'
 lines terminated by '\n'
 ignore 1 lines;
 
@@ -78,6 +79,7 @@ load data local infile './countries.csv'
 into table airport
 character set utf8
 fields terminated by ','
+optionally enclosed by '"'
 lines terminated by '\n'
 ignore 1 lines;
 
@@ -105,3 +107,4 @@ values (1,4),
 (1,7),
 (2,4),
 (3,7);
+
