@@ -76,7 +76,7 @@ lines terminated by '\n'
 ignore 1 lines;
 
 load data local infile './countries.csv'
-into table airport
+into table country
 character set utf8
 fields terminated by ','
 optionally enclosed by '"'
